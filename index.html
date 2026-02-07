@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Maggie | Be My Valentine</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="maggie-favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section class="hero">
+  <h1>Hey Maggie!</h1>
+  <p style="font-weight: 800; color: white;">Please scroll down 💗</p>
+  <div class="scroll-hint" onclick="document.getElementById('week').scrollIntoView()">Start Here 💌</div>
+</section>
+
+<section class="section-carousel" id="week">
+  <div class="panel">
+    <h2 style="font-family:'Dancing Script'; font-size:40px; margin-bottom:20px; text-align:center;">Valentine's Week</h2>
+    <div class="carousel">
+      
+      <article class="vcard" data-date="2026-02-07">
+        <div class="vcardInner">
+          <div class="face front">
+            <small>Feb 7 • Rose Day</small>
+            <h3 style="font-family:'Dancing Script'; font-size:28px; margin:0;">Happy Rose Day 🌹</h3>
+            <div class="placeholder-img"><img src="snoopy_rose.png" alt="Snoopy" class="snoopy-img"></div>
+            <div class="cute-msg-container"><p class="cute-msg">A rose for the girl who makes my world bloom 🌎🌸. </p></div>
+            <button class="flip-circle" onclick="flip(this)">↻</button>
+          </div>
+          <div class="face back">
+            <small>Feb 7 • Rose Day</small>
+            <h3 style="font-family:'Dancing Script'; margin-top:0;">For You</h3>
+            <p style="font-weight:700; font-family:'Dancing Script'; font-size:18px;">You make my life as beautiful as a garden in full bloom. 🌹</p>
+            <p style="font-weight:700; font-family:'Dancing Script'; font-size:18px;">If I had roses everytime I saw you, I'd shower you with them all day long! 💐💕</p>
+            <p style="font-weight:700; font-family:'Dancing Script'; font-size:18px;">Your cuteness is blossomed like the most rare roses in the world.🌎</p>
+            <p style="font-weight:700; font-family:'Dancing Script'; font-size:18px;">Roses are Red, Violets are Blue, No one is more beautiful than you.🤩😘</p>
+            <button class="flip-circle" onclick="flip(this)">↩</button>
+          </div>
+        </div>
+        <div class="lockedOverlay">Locked until Feb 7</div>
+      </article>
+
+      <article class="vcard" data-date="2026-02-08">
+        <div class="vcardInner">
+          <div class="face front">
+            <small>Feb 8 • Propose Day</small>
+            <h3 style="font-family:'Dancing Script'; font-size:28px; margin:0;">I Have A Question..</h3>
+            <div class="placeholder-img"><img src="snoopy_question.png" alt="Snoopy" class="snoopy-img"></div>
+            <div class="cute-msg-container"><p class="cute-msg">Maggie, I have something special to ask you...</p></div>
+            <button class="flip-circle" onclick="showAndScrollToPropose()" style="background:var(--text); color:white;">↓</button>
+          </div>
+        </div>
+        <div class="lockedOverlay">Locked until Feb 8</div>
+      </article>
+
+      <article class="vcard" data-date="2026-02-09">
+        <div class="vcardInner">
+          <div class="face front">
+            <small>Feb 9 • Chocolate Day</small>
+            <h3 style="font-family:'Dancing Script'; font-size:28px; margin:0;">Sweet Treats 🍫</h3>
+            <div class="placeholder-img"><img src="snoopy_chocolates.png" alt="Snoopy" class="snoopy-img"></div>
+            <div class="cute-msg-container"><p class="cute-msg">Something sweet for the sweetest girl.</p></div>
+            <button class="flip-circle" onclick="flip(this)">↻</button>
+          </div>
+          <div class="face back">
+            <small>Feb 9 • Chocolate Day</small>
+            <h3 style="font-family:'Dancing Script'; margin-top:0;">Maggie</h3>
+            <p style="font-weight:700;">No amount of chocolate is as sweet as you! 🍫</p>
+            <button class="flip-circle" onclick="flip(this)">↩</button>
+          </div>
+        </div>
+        <div class="lockedOverlay">Locked until Feb 9</div>
+      </article>
+
+      <article class="vcard" data-date="2026-02-10">
+        <div class="vcardInner">
+          <div class="face front">
+            <small>Feb 10 • Teddy Day</small>
+            <h3 style="font-family:'Dancing Script'; font-size:28px; margin:0;">Warm Hugs 🧸</h3>
+            <div class="placeholder-img"><img src="snoopy_bear.png" alt="Snoopy" class="snoopy-img"></div>
+            <div class="cute-msg-container"><p class="cute-msg">Sending you a big soft hug today.</p></div>
+            <button class="flip-circle" onclick="flip(this)">↻</button>
+          </div>
+          <div class="face back">
+            <small>Feb 10 • Teddy Day</small>
+            <h3 style="font-family:'Dancing Script'; margin-top:0;">Teddy</h3>
+            <p style="font-weight:700;">A digital teddy until I can give you a real hug. 🧸</p>
+            <button class="flip-circle" onclick="flip(this)">↩</button>
+          </div>
+        </div>
+        <div class="lockedOverlay">Locked until Feb 10</div>
+      </article>
+
+      <article class="vcard" data-date="2026-02-11">
+        <div class="vcardInner">
+          <div class="face front">
+            <small>Feb 11 • Promise Day</small>
+            <h3 style="font-family:'Dancing Script'; font-size:28px; margin:0;">My Promise 💖</h3>
+            <div class="placeholder-img"><img src="snoopy_promise.png" alt="Snoopy" class="snoopy-img"></div>
+            <div class="cute-msg-container"><p class="cute-msg">A special promise just for you.</p></div>
+            <button class="flip-circle" onclick="flip(this)">↻</button>
+          </div>
+          <div class="face back">
+            <small>Feb 11 • Promise Day</small>
+            <h3 style="font-family:'Dancing Script'; margin-top:0;">Always</h3>
+            <p style="font-weight:700;">I promise to always try my best to make you laugh. 🤝</p>
+            <button class="flip-circle" onclick="flip(this)">↩</button>
+          </div>
+        </div>
+        <div class="lockedOverlay">Locked until Feb 11</div>
+      </article>
+
+      <article class="vcard" data-date="2026-02-12">
+        <div class="vcardInner">
+          <div class="face front">
+            <small>Feb 12 • Hug Day</small>
+            <h3 style="font-family:'Dancing Script'; font-size:28px; margin:0;">Squeeze! 🤗</h3>
+            <div class="placeholder-img"><img src="snoopy_hug.png" alt="Snoopy" class="snoopy-img"></div>
+            <div class="cute-msg-container"><p class="cute-msg">The best place in the world is in your arms.</p></div>
+            <button class="flip-circle" onclick="flip(this)">↻</button>
+          </div>
+          <div class="face back">
+            <small>Feb 12 • Hug Day</small>
+            <h3 style="font-family:'Dancing Script'; margin-top:0;">Big Hugs</h3>
+            <p style="font-weight:700;">Sending a massive virtual hug your way! 🫂</p>
+            <button class="flip-circle" onclick="flip(this)">↩</button>
+          </div>
+        </div>
+        <div class="lockedOverlay">Locked until Feb 12</div>
+      </article>
+
+      <article class="vcard" data-date="2026-02-13">
+        <div class="vcardInner">
+          <div class="face front">
+            <small>Feb 13 • Kiss Day</small>
+            <h3 style="font-family:'Dancing Script'; font-size:28px; margin:0;">Mwah! 😘</h3>
+            <div class="placeholder-img"><img src="snoopy_kiss.gif" alt="Snoopy" class="snoopy-img"></div>
+            <div class="cute-msg-container"><p class="cute-msg">A little kiss for your day.</p></div>
+            <button class="flip-circle" onclick="flip(this)">↻</button>
+          </div>
+          <div class="face back">
+            <small>Feb 13 • Kiss Day</small>
+            <h3 style="font-family:'Dancing Script'; margin-top:0;">Kiss Day</h3>
+            <p style="font-weight:700;">Hope your day is full of love and sweetness. 💋</p>
+            <button class="flip-circle" onclick="flip(this)">↩</button>
+          </div>
+        </div>
+        <div class="lockedOverlay">Locked until Feb 13</div>
+      </article>
+
+      <article class="vcard" data-date="2026-02-14">
+        <div class="vcardInner">
+          <div class="face front">
+            <small>Feb 14 • Valentine's</small>
+            <h3 style="font-family:'Dancing Script'; font-size:28px; margin:0;">The Big Day 💖</h3>
+            <div class="placeholder-img"><img src="snoopy_valentine.gif" alt="Snoopy" class="snoopy-img"></div>
+            <div class="cute-msg-container"><p class="cute-msg">Happy Valentine's Day, Maggie!</p></div>
+            <button class="flip-circle" onclick="flip(this)">↻</button>
+          </div>
+          <div class="face back">
+            <small>Feb 14 • Valentine's</small>
+            <h3 style="font-family:'Dancing Script'; margin-top:0;">Love You</h3>
+            <p style="font-weight:700;">You are my favorite person. Happy Valentine's Day! 💖</p>
+            <button class="flip-circle" onclick="flip(this)">↩</button>
+          </div>
+        </div>
+        <div class="lockedOverlay">Locked until Feb 14</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="propose-day">
+  <div class="propose-card">
+    <div class="placeholder-img" style="border:none; background:transparent;">
+        <img src="snoopy.png" alt="Snoopy" class="snoopy-img">
+    </div>
+    <h1 style="font-family:'Dancing Script'; font-size:42px;">Will you be my Valentine Maggie?</h1>
+    <div class="arena" id="arena">
+      <button class="pill" id="yesBtn">Yes</button>
+      <button class="pill" id="noBtn">No</button>
+    </div>
+    <div style="margin-top:30px;">
+      <button class="btn" onclick="hideAndGoBack()">↑ Back to Top</button>
+    </div>
+  </div>
+</section>
+
+<div class="finalReveal" id="finalReveal">
+    <h1 style="font-family:'Dancing Script'; font-size:55px; color:white; margin:0;">Aww!! I love you Maggie!! 💖</h1>
+    <img src="valentine.png" alt="Success">
+    <br>
+    <button class="btn" onclick="document.getElementById('finalReveal').classList.remove('show')">Back to Cards</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
